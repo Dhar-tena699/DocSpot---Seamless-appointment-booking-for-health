@@ -1,0 +1,458 @@
+/* ─── Auth Pages ─────────────────────────────────────────────────────────────── */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  padding: 40px 32px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-header .ant-typography:last-child {
+  margin-top: 8px;
+  display: block;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* ─── Dashboard Pages ────────────────────────────────────────────────────────── */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding: 24px;
+}
+
+.dashboard-card {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 40px 32px;
+  text-align: center;
+}
+
+/* ─── Antd Overrides ─────────────────────────────────────────────────────────── */
+.ant-btn-primary {
+  height: 44px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-input-password,
+.ant-select-selector {
+  border-radius: 8px !important;
+}
+
+.ant-card {
+  transition: transform 0.2s ease;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   LANDING PAGE
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ─── Navbar ─────────────────────────────────────────────────────────────────── */
+.landing-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 48px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.landing-nav-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d7c66;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.landing-nav-logo:hover {
+  color: #0a6350;
+}
+
+.landing-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ─── Buttons (shared) ───────────────────────────────────────────────────────── */
+.landing-btn-text {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.landing-btn-text:hover {
+  color: #0d7c66;
+  border-color: #0d7c66;
+}
+
+.landing-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: #0d7c66;
+  border: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.landing-btn-primary:hover {
+  background: #0a6350;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(13, 124, 102, 0.3);
+  color: #fff;
+}
+
+.landing-btn-lg {
+  padding: 14px 36px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.landing-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 36px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.landing-btn-outline:hover {
+  background: #fff;
+  color: #0d7c66;
+  transform: translateY(-1px);
+}
+
+/* ─── Hero Section ───────────────────────────────────────────────────────────── */
+.landing-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 64px);
+  padding: 60px 48px;
+  gap: 48px;
+  background: #fff;
+}
+
+.landing-hero-content {
+  flex: 1;
+  max-width: 560px;
+}
+
+.landing-hero-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #0d7c66;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.landing-hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+}
+
+.landing-hero-accent {
+  color: #0d7c66;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.landing-hero-desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+.landing-hero-image {
+  flex: 1;
+  max-width: 520px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.landing-hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.12);
+}
+
+/* ─── Section Title ──────────────────────────────────────────────────────────── */
+.landing-section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 48px;
+}
+
+/* ─── Features (Why Choose) ──────────────────────────────────────────────────── */
+.landing-features {
+  padding: 80px 48px;
+  background: #fff;
+}
+
+.landing-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.landing-feature-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.landing-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  border-color: #e0e0e0;
+}
+
+.landing-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e8f5f1;
+  color: #0d7c66;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.landing-feature-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.landing-feature-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #888;
+  margin: 0;
+}
+
+/* ─── Steps (How It Works) ───────────────────────────────────────────────────── */
+.landing-steps {
+  padding: 80px 48px;
+  background: #f9fafb;
+}
+
+.landing-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.landing-step-card {
+  text-align: center;
+  padding: 24px;
+}
+
+.landing-step-number {
+  display: block;
+  font-size: 56px;
+  font-weight: 800;
+  color: #d9efea;
+  margin-bottom: 16px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.landing-step-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.landing-step-card p {
+  font-size: 14px;
+  color: #0d7c66;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ─── CTA Section ────────────────────────────────────────────────────────────── */
+.landing-cta {
+  padding: 100px 48px;
+  background: linear-gradient(135deg, #0d7c66 0%, #159a7f 100%);
+  text-align: center;
+}
+
+.landing-cta h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 16px 0;
+}
+
+.landing-cta p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 36px 0;
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────────────── */
+.landing-footer {
+  padding: 24px 48px;
+  text-align: center;
+  background: #f9fafb;
+  border-top: 1px solid #eee;
+}
+
+.landing-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 992px) {
+  .landing-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .landing-hero-content {
+    max-width: 100%;
+  }
+
+  .landing-hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .landing-hero-image {
+    max-width: 400px;
+    justify-content: center;
+  }
+
+  .landing-hero-title {
+    font-size: 38px;
+  }
+
+  .landing-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .landing-nav {
+    padding: 12px 20px;
+  }
+
+  .landing-hero {
+    padding: 32px 20px;
+  }
+
+  .landing-hero-title {
+    font-size: 30px;
+  }
+
+  .landing-features {
+    padding: 48px 20px;
+  }
+
+  .landing-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-steps {
+    padding: 48px 20px;
+  }
+
+  .landing-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-cta {
+    padding: 60px 20px;
+  }
+
+  .landing-cta h2 {
+    font-size: 28px;
+  }
+
+  .landing-section-title {
+    font-size: 28px;
+  }
+}
